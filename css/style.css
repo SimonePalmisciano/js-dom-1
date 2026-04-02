@@ -29,9 +29,21 @@ a {
     text-align: center;
 }
 
+.text-white {
+    color: white;
+}
 /************************
         MAIN
 ************************/
+
+.wrapper {
+    height: 800px;
+    width: 800px;
+    background-color: black;
+    border: 2 px solid black;
+    border-radius: 20px;
+    margin: auto;
+}
 
 .img-container {
     display: flex;
