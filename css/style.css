@@ -1,0 +1,57 @@
+/************************
+        CSS RESET
+************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/************************
+        UTILITY
+************************/
+
+.text-center {
+    text-align: center;
+}
+
+/************************
+        MAIN
+************************/
+
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.img-container img {
+    width: 50%;
+}
+
+/* BUTTON */
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    background-color: coral;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+}
