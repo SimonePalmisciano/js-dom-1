@@ -7,7 +7,23 @@ const bottoneInterattivo = document.querySelector('#interactiveButton')
 // con quella accesa con .innerHTML quando si clicca il bottone
 
 function clickButtonToSwitchLampOnOff() {
+    const bottoneSpento = 'Spegni Lampadina';
+    const bottoneAcceso = 'Accendi Lampadina';
+    const imgLampadaAccesa = `
+    <img src="./img/yellow_lamp.png" alt="lampadina accesa"></img>
+    `;
+    const imgLampadinaSpenta = `
+    <img src="./img/white_lamp.png" alt="lampadina spenta"></img>
+    `;
+    if (bottoneInterattivo.innerHTML.includes('Accendi')) {
+        bottoneInterattivo.innerHTML = bottoneSpento;
 
+        containerImmagineLampadina.innerHTML = imgLampadaAccesa;
+    } else {
+        bottoneInterattivo.innerHTML = bottoneAcceso;
+
+        containerImmagineLampadina.innerHTML = imgLampadinaSpenta;
+    }
 }
 
 // adesso il bottone deve avere un eventlistener
